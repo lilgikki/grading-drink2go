@@ -1,0 +1,57 @@
+.buy-item {
+  width: 230px;
+  padding: 0 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-bottom: 158px;
+  }
+}
+
+.buy-item__old-price {
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration-line: line-through;
+  color: #7859CF;
+}
+
+.buy-item__new-price {
+  margin-left: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.buy-item__buy {
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin-left: 20px;
+  padding: 8px 20px;
+  background-color: #7859CF;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.buy-item__buy:hover, .buy-item__buy:focus {
+  transition: 250ms;
+  background-color: #9070EC;
+}
+
+.buy-item__buy:active {
+  transition: 250ms;
+  background-color: #593CAC;
+}
+
+.buy-item__buy:disabled {
+  background-color: #BDBDBD;
+  cursor: default;
+}

@@ -1,0 +1,138 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 728px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px;
+    width: 1360px;
+  }
+}
+
+.main-nav--close .main-nav__list--site {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav--no-js .main-nav__list--site {
+  display: flex;
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__about {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    width: 126px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    height: fit-content;
+    align-self: flex-end;
+  }
+}
+
+.main-nav__link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-nav__text {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main-nav__text--log-in, .main-nav__text--cart {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  padding: 24px 22px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--close .main-nav__toggle {
+  background-image: url(../img/menu-open.svg);
+}
+
+.main-nav--open .main-nav__toggle {
+  background-image: url(../img/menu-close.svg);
+}
+
+.main-nav__logo {
+  order: 0;
+  text-decoration: none;
+  display: block;
+  width: 32px;
+  height: 36px;
+  margin: 12px 88px 12px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 82px;
+    margin: 0;
+    margin-right: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+.main-nav__pic {
+  @media (min-width: @desktop-width) {
+    height: fit-content;
+  }
+}
+
+.main-nav__link:hover, .main-nav__link:focus {
+  color: #7859CF;
+}
+
+.main-nav__link:active {
+  background-color: #F0EBFF;
+  border-bottom: 2px solid #F0EBFF;
+}
+
+.main-nav__toggle:active {
+  background-color: #F0EBFF;
+}

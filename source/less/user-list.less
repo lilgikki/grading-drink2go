@@ -1,0 +1,41 @@
+.user-list {
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 120px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 261px;
+  }
+}
+
+.user-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  padding: 22px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 32px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: fit-content;
+    padding: 32px 20px;
+  }
+}
+
+.user-list__icon {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: @desktop-width)  {
+    margin-right: 8px;
+  }
+}

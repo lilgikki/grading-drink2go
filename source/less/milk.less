@@ -1,0 +1,92 @@
+.milk {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    width: 220px;
+    margin-right: 6px;
+  }
+}
+
+.milk__item {
+  width: 280px;
+  display: block;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.milk__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.milk__label {
+  padding-left: 34px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.milk__label::before {
+  position: absolute;
+  transition: 250ms;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #BDBDBD;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  left: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.milk__label::after {
+  transition: 250ms;
+  position: absolute;
+  display: none;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #7859CF;
+  border-radius: 50%;
+  left: 4px;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.milk__label:hover.milk__label::after, .milk__label:focus.milk__label::after {
+  background: rgba(120, 89, 207, 0.25);
+}
+
+.milk__label:disabled.milk__label::before {
+  border-color: #E2E2E2;
+}
+
+.milk__input:checked ~ .milk__label::after {
+  transition: 250ms;
+  display: block;
+}
+
+.milk__input:checked ~ .milk__label::before {
+  transition: 250ms;
+  border: 2px solid #7859CF;
+}
+
+.milk__input:disabled ~ .milk__label {
+  cursor: default;
+  color: #BDBDBD;
+}
+
+.milk__input:disabled ~ .milk__label::before {
+  border: 2px solid #E2E2E2;
+}
+
+.milk__input:disabled ~ .milk__label::after {
+  background-color: #E2E2E2;
+}

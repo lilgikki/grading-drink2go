@@ -1,0 +1,134 @@
+.filters {
+  @media (min-width: @tablet-width) {
+    width: 728px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 318px;
+    padding-top: 3px;
+    display: block;
+  }
+}
+
+.filters__block {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    height: fit-content;
+    margin-bottom: 28px;
+  }
+}
+
+.filters__type {
+  padding: 22px 0 21px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 21px 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 20px;
+  }
+}
+
+.filters__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filters__buttons {
+  margin: 34px auto 0;
+  width: 160px;
+
+  @media (min-width: @tablet-width) {
+    width: 315px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 38px 232px 42px 180px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+    margin: 40px 0 0;
+  }
+}
+
+.filters__button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: #7859CF;
+  border-radius: 4px;
+  padding: 10px 0;
+  color: #FFFFFF;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 148px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 150px;
+  }
+}
+
+.filters__button:hover, .filters__button:focus {
+  transition: 250ms;
+  background-color: #9070EC;
+}
+
+.filters__button:active {
+  transition: 250ms;
+  background-color: #593CAC;
+}
+
+.filters__button:disabled {
+  background-color: #BDBDBD;
+  cursor: default;
+}
+
+.filters__button--reset {
+  margin-top: 26px;
+  margin-bottom: 3px;
+  background-color: #FFFFFF;
+  color: #7859CF;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 138px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 150px;
+  }
+}
+
+.filters__button--reset:active, .filters__button--reset:hover, .filters__button--reset:focus {
+  transition: 250ms;
+  color: #FFFFFF;
+}
+
+.filters__button--reset:disabled {
+  color: #FFFFFF;
+  background-color: #E2E2E2;
+}

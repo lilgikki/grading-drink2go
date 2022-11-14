@@ -1,0 +1,120 @@
+.range__controls {
+  margin-top: 10px;
+  width: 280px;
+  height: 2px;
+  position: relative;
+  background-color: #E2E2E2;
+
+  @media (min-width: @tablet-width) {
+    width: 220px;
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+    margin-left: 0;
+  }
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: #9070EC;
+  top: -1px;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -10px;
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+  border: 2px solid #9070EC;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__toggle--max {
+  right: 0;
+}
+
+.range__toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.range__toggle:hover.range__toggle::after, .range__toggle:focus.range__toggle::after {
+  background-color: rgba(120, 89, 207, 0.25);
+}
+
+.range__toggle:active.range__toggle::after {
+  background-color: #7859CF;
+}
+
+.range__price-controls {
+  margin-top: 37px;
+  margin-bottom: 2px;
+  position: relative;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-left: 6px;
+    width: 222px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    width: 318px;
+  }
+}
+
+.range__price-controls::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  background-color: #BDBDBD;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.range__input {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  border: 2px solid #9070EC;
+  border-radius: 4px;
+  background: #FFFFFF;
+  width: 98px;
+  padding: 5px 8px;
+  text-align: center;
+  color: #333333;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    padding: 6px 8px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    width: 114px;
+  }
+}
+
+.range__input::placeholder {
+  color: #BDBDBD;
+}
+
+.range__input:focus {
+  border-color: #593CAC;
+  outline: #593CAC;
+}
