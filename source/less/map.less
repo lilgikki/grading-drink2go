@@ -2,17 +2,31 @@
   width: 100%;
   height: 420px;
   background-color: #E5E6E8;
-  background-image: url(../img/map-bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: @tablet-width) {
     height: 480px;
-    background-image: url(../img/map-bg-tablet.jpg);
   }
 
   @media (min-width: @desktop-width) {
     height: 540px;
-    background-image: url(../img/map-bg-desktop.jpg);
+  }
+}
+
+.map__img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 420px;
+  max-width: 320px;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    height: 480px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    height: 540px;
   }
 }

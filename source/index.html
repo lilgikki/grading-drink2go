@@ -208,19 +208,19 @@
               <legend class="filters__type">Наличие молока</legend>
               <ul class="milk list">
                 <li class="milk__item">
-                  <input class="milk__input visually-hidden" type="radio" id="no-matter" name="milk-content" checked>
+                  <input class="milk__input visually-hidden" type="radio" id="no-matter" name="milk-content" value="no-matter" checked>
                   <label class="milk__label filters__text" for="no-matter">Неважно</label>
                 </li>
                 <li class="milk__item">
-                  <input class="milk__input visually-hidden" type="radio" id="animal" name="milk-content">
+                  <input class="milk__input visually-hidden" type="radio" id="animal" value="animal" name="milk-content">
                   <label class="milk__label filters__text" for="animal">Только животное</label>
                 </li>
                 <li class="milk__item">
-                  <input class="milk__input visually-hidden" type="radio" id="veg" name="milk-content">
+                  <input class="milk__input visually-hidden" type="radio" id="veg" value="vegan" name="milk-content">
                   <label class="milk__label filters__text" for="veg">Только растительное</label>
                 </li>
                 <li class="milk__item">
-                  <input class="milk__input visually-hidden" type="radio" id="without" name="milk-content" disabled>
+                  <input class="milk__input visually-hidden" type="radio" id="without" value="without" name="milk-content" disabled>
                   <label class="milk__label filters__text" for="without">Без молока</label>
                 </li>
               </ul>
@@ -229,23 +229,23 @@
               <legend class="filters__type">Страна произрастания</legend>
               <ul class="country list">
                 <li class="country__item">
-                  <input class="country__input visually-hidden" type="checkbox" id="brazil" name="milk-content" checked>
+                  <input class="country__input visually-hidden" type="checkbox" id="brazil" name="country-brazil" checked>
                   <label class="country__label filters__text" for="brazil">Бразилия</label>
                 </li>
                 <li class="country__item">
-                  <input class="country__input visually-hidden" type="checkbox" id="ethiopia" name="milk-content">
+                  <input class="country__input visually-hidden" type="checkbox" id="ethiopia" name="country-eth">
                   <label class="country__label filters__text" for="ethiopia">Эфиопия</label>
                 </li>
                 <li class="country__item">
-                  <input class="country__input visually-hidden" type="checkbox" id="colombia" name="milk-content">
+                  <input class="country__input visually-hidden" type="checkbox" id="colombia" name="country-colombia">
                   <label class="country__label filters__text" for="colombia">Колумбия</label>
                 </li>
                 <li class="country__item">
-                  <input class="country__input visually-hidden" type="checkbox" id="costa-rica" name="milk-content">
+                  <input class="country__input visually-hidden" type="checkbox" id="costa-rica" name="country-costa">
                   <label class="country__label filters__text" for="costa-rica">Коста-Рика</label>
                 </li>
                 <li class="country__item">
-                  <input class="country__input visually-hidden" type="checkbox" id="peru" name="milk-content" disabled>
+                  <input class="country__input visually-hidden" type="checkbox" id="peru" name="country-peru" disabled>
                   <label class="country__label filters__text" for="peru">Перу</label>
                 </li>
               </ul>
@@ -279,7 +279,7 @@
                 <span class="items__caption">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</span>
                 <div class="items__wrapper">
                   <b class="items__price">225₽</b>
-                  <button class="items__add">В корзину</button>
+                  <button class="items__add" type="button">В корзину</button>
                 </div>
               </li>
               <li class="items__item items__item--second">
@@ -295,7 +295,7 @@
                 <span class="items__caption">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</span>
                 <div class="items__wrapper">
                   <b class="items__price">225₽</b>
-                  <button class="items__add">В корзину</button>
+                  <button class="items__add" type="button">В корзину</button>
                 </div>
               </li>
               <li class="items__item items__item--third">
@@ -311,7 +311,7 @@
                 <span class="items__caption">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</span>
                 <div class="items__wrapper">
                   <b class="items__price">225₽</b>
-                  <button class="items__add">В корзину</button>
+                  <button class="items__add" type="button">В корзину</button>
                 </div>
               </li>
               <li class="items__item items__item--fourth">
@@ -327,7 +327,7 @@
                 <span class="items__caption">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</span>
                 <div class="items__wrapper">
                   <b class="items__price">225₽</b>
-                  <button class="items__add">В корзину</button>
+                  <button class="items__add" type="button">В корзину</button>
                 </div>
               </li>
               <li class="items__item items__item--fifth">
@@ -343,7 +343,7 @@
                 <span class="items__caption">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</span>
                 <div class="items__wrapper">
                   <b class="items__price">225₽</b>
-                  <button class="items__add">В корзину</button>
+                  <button class="items__add" type="button">В корзину</button>
                 </div>
               </li>
               <li class="items__item items__item--sixth">
@@ -359,7 +359,7 @@
                 <span class="items__caption">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</span>
                 <div class="items__wrapper">
                   <b class="items__price">225₽</b>
-                  <button class="items__add">В корзину</button>
+                  <button class="items__add" type="button">В корзину</button>
                 </div>
               </li>
             </ul>
@@ -389,6 +389,14 @@
       </section>
       <section class="map" id="map">
         <h2 class="visually-hidden">Распложение магазина на карте</h2>
+        <picture class="map__img">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-bg-desktop.webp 1x, img/map-bg-desktop@2.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-bg-tablet.webp 1x, img/map-bg-tablet@2.webp 2x">
+          <source type="image/webp" srcset="img/map-bg-mobile.webp 1x, img/map-bg-mobile@2.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-bg-desktop.png 1x, imgmap-bg-desktop@2.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-bg-tablet.jpg 1x, img/map-bg-tablet@2.jpg 2x">
+          <img src="img/map-bg-mobile.jpg" srcset="img/map-bg-mobile@2.jpg 2x" alt="Скриншот расположения магазина на карте">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
